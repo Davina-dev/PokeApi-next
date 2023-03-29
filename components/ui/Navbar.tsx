@@ -11,15 +11,15 @@ export const Navbar = () => {
         flexDirection: "row",
         justifyContent: "start",
         alignItems: "center",
-        padding: "0px 50px",
+        padding: "0px 20px",
         backgroundColor: theme?.colors.gray50.value,
       }}
     >
       <Image
         src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png"
         alt="poke icon"
-        width={80}
-        height={80}
+        width={70}
+        height={70}
       />
 
       <Text color="white" h2>
