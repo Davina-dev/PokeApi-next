@@ -2,10 +2,13 @@ lockfileVersion: 5.4
 
 specifiers:
   '@nextui-org/react': 1.0.0-beta.12
+  '@types/canvas-confetti': ^1.6.0
   '@types/node': 18.15.5
   '@types/react': 18.0.28
   '@types/react-dom': 18.0.11
   axios: ^1.3.4
+  canvas-confetti: ^1.6.0
+  confetti: link:@types/canvas/confetti
   eslint: 8.36.0
   eslint-config-next: 13.2.4
   next: 13.2.4
@@ -19,12 +22,17 @@ dependencies:
   '@types/react': 18.0.28
   '@types/react-dom': 18.0.11
   axios: 1.3.4
+  canvas-confetti: 1.6.0
   eslint: 8.36.0
   eslint-config-next: 13.2.4_j4766f7ecgqbon3u7zlxn5zszu
   next: 13.2.4_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   typescript: 5.0.2
+
+devDependencies:
+  '@types/canvas-confetti': 1.6.0
+  confetti: link:@types/canvas/confetti
 
 packages:
 
@@ -1049,6 +1057,10 @@ packages:
       tslib: 2.5.0
     dev: false
 
+  /@types/canvas-confetti/1.6.0:
+    resolution: {integrity: sha512-Yq6rIccwcco0TLD5SMUrIM7Fk7Fe/C0jmNRxJJCLtAF6gebDkPuUjK5EHedxecm69Pi/aA+It39Ux4OHmFhjRw==}
+    dev: true
+
   /@types/json5/0.0.29:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: false
@@ -1305,6 +1317,10 @@ packages:
 
   /caniuse-lite/1.0.30001469:
     resolution: {integrity: sha512-Rcp7221ScNqQPP3W+lVOYDyjdR6dC+neEQCttoNr5bAyz54AboB4iwpnWgyi8P4YUsPybVzT4LgWiBbI3drL4g==}
+    dev: false
+
+  /canvas-confetti/1.6.0:
+    resolution: {integrity: sha512-ej+w/m8Jzpv9Z7W7uJZer14Ke8P2ogsjg4ZMGIuq4iqUOqY2Jq8BNW42iGmNfRwREaaEfFIczLuZZiEVSYNHAA==}
     dev: false
 
   /chalk/4.1.2:

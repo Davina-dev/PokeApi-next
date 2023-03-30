@@ -35,7 +35,7 @@ export const Navbar = () => {
 
             <Link href="/favorites">
                 <Text color="white" size="$xl">
-                    Favoritos
+                    Favorites
                 </Text>
             </Link>
 
