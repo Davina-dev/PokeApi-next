@@ -6,7 +6,7 @@ import {localFavorites} from "@/utils";
 import {useRouter} from "next/router";
 
 
-const Favorites = () => {
+const FavoritesPage = () => {
     const [favoritePokemons, setFavoritePokemons] = useState<number[]>([]);
 
     useEffect(() => {
@@ -17,7 +17,7 @@ const Favorites = () => {
         router.push(`/pokemon/${id}`)
     }
     return (
-        <Layout title="Favorites">
+        <Layout title="FavoritesPage">
 
             <Container css={{
                 display: 'flex',
@@ -54,7 +54,7 @@ const Favorites = () => {
                             textAlign: 'justify'
                         }}>
                             Oh no! It seems like all my Pokémon decided to take a vacation and leave my favorites list
-                            empty. It's time to go look for new pocket friends!</Text>
+                            empty. It is time to go look for new pocket friends!</Text>
 
                     </Grid.Container>
                 }
@@ -63,4 +63,4 @@ const Favorites = () => {
         </Layout>
     )
 }
-export default Favorites;
+export default FavoritesPage;
