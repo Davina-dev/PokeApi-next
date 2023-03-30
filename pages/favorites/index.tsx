@@ -48,7 +48,13 @@ const Favorites = () => {
                     }}>
 
                         <Image src="/emptyPage.svg" alt="cat image" width={600} height={350}/>
-                        <Text size="x-large" color='warning'> You don't have any Pokémon in favorites </Text>
+                        <Text size="x-large" color='warning' css={{
+                            maxWidth: '600px',
+                            opacity: '80%',
+                            textAlign: 'justify'
+                        }}>
+                            Oh no! It seems like all my Pokémon decided to take a vacation and leave my favorites list
+                            empty. It's time to go look for new pocket friends!</Text>
 
                     </Grid.Container>
                 }
