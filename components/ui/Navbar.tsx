@@ -1,38 +1,44 @@
-import { Spacer, Text, useTheme } from "@nextui-org/react";
-import Image from "next/image";
+import Image from 'next/image';
+import {Link, Spacer, Text, useTheme} from '@nextui-org/react';
 
 export const Navbar = () => {
-  const { theme } = useTheme();
-  return (
-    <div
-      style={{
-        display: "flex",
-        width: "100%",
-        flexDirection: "row",
-        justifyContent: "start",
-        alignItems: "center",
-        padding: "0px 20px",
-        backgroundColor: theme?.colors.gray50.value,
-      }}
-    >
-      <Image
-        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png"
-        alt="poke icon"
-        width={70}
-        height={70}
-      />
+    const {theme} = useTheme();
+    return (
+        <div
+            style={{
+                display: "flex",
+                width: "100%",
+                flexDirection: "row",
+                justifyContent: "start",
+                alignItems: "center",
+                padding: "5px 50px",
+                backgroundColor: theme?.colors.gray50.value,
+            }}
+        >
+            <Image
+                src="/pokeLogo.png"
+                alt="poke icon"
+                width={65}
+                height={55}
+            />
 
-      <Text color="white" h2>
-        P
-      </Text>
-      <Text color="white" h3>
-        okémon
-      </Text>
+            <Link href="/" color="success">
+                <Text color="white" h2>
+                    P
+                </Text>
+                <Text color="white" h3>
+                    okémon
+                </Text>
+            </Link>
 
-      <Spacer css={{ flex: 1 }} />
-      <Text color="white" size="$xl">
-        Favoritos
-      </Text>
-    </div>
-  );
+            <Spacer css={{flex: 1}}/>
+
+            <Link href="/favorites">
+                <Text color="white" size="$xl">
+                    Favoritos
+                </Text>
+            </Link>
+
+        </div>
+    );
 };
