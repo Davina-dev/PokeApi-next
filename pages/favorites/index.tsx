@@ -17,7 +17,7 @@ const FavoritesPage = () => {
         router.push(`/pokemon/${id}`)
     }
     return (
-        <Layout title="FavoritesPage">
+        <Layout title="Favorites Pokémons">
 
             <Container css={{
                 display: 'flex',
