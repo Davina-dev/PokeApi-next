@@ -30,7 +30,7 @@ export const getStaticProps: GetStaticProps = async () => {
             index + 1
         }.svg`,
     }));
-    console.log(pokemons);
+ 
 
     return {
         props: {

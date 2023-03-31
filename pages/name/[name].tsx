@@ -13,7 +13,6 @@ interface Props {
 }
 
 const PokemonByNamePage: NextPage<Props> = ({pokemon}) => {
-    console.log(pokemon)
     const [isInFavorites, setIsinFavorites] = useState(localFavorites.existInFavorites(pokemon.id))
     const onToggleFavorite = () => {
         localFavorites.toggleFavorites(pokemon.id)
