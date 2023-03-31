@@ -42,6 +42,8 @@ const FavoritesPage = () => {
                     </Grid.Container>
                     :
                     <Grid.Container css={{
+                        display: 'flex',
+                        flexDirection: 'column',
                         alignItems: 'center',
                         justifyContent: 'center',
                         marginTop: '10rem',
