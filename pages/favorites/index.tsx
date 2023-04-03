@@ -18,7 +18,6 @@ const FavoritesPage = () => {
     }
     return (
         <Layout title="Favorites Pokémons">
-
             <Container css={{
                 display: 'flex',
                 flexDirection: 'column',
