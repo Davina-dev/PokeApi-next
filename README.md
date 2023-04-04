@@ -25,3 +25,5 @@ Vercel (for application deployment)
 
   - ISR: Incremental Static Regeneration,
 ISG: Incremental Static Generatio
+
+- https://pokeapi-next-static-davina-dev.vercel.app/
