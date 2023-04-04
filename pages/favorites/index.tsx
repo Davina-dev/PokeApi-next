@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import {Layout} from "@/components/layouts";
+import {Layout} from "@/components";
 import {Card, Container, Grid, Text} from "@nextui-org/react";
 import Image from "next/image";
 import {localFavorites} from "@/utils";

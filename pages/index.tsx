@@ -1,8 +1,7 @@
 import {GetStaticProps, NextPage} from "next";
-import {Layout} from "@/components/layouts";
 import {pokeApi} from "@/api";
 import {PokemonListResponse, SmallPokemon} from "@/interfaces";
-import {PokemonCard} from "@/components/pokemon";
+import {Layout, PokemonCard} from "@/components";
 import {Grid} from "@nextui-org/react";
 
 interface Props {
@@ -30,7 +29,7 @@ export const getStaticProps: GetStaticProps = async () => {
             index + 1
         }.svg`,
     }));
- 
+
 
     return {
         props: {

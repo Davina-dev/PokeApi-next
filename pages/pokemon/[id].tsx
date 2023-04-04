@@ -3,7 +3,7 @@ import {useState} from "react";
 import {GetStaticPaths, GetStaticProps, NextPage} from "next";
 import {Button, Card, Container, Grid, Image, Text} from '@nextui-org/react';
 import confetti from 'canvas-confetti';
-import {Layout} from "@/components/layouts";
+import {Layout} from "@/components";
 import {Pokemon} from "@/interfaces";
 import {getPokemonInfo, localFavorites} from "@/utils";
 
