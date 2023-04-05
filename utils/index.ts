@@ -1,2 +1,2 @@
-export {default as localFavorites} from "./localFavorites";
+export {default as useFavorites} from "./useFavorites";
 export * from './getPokeApi';

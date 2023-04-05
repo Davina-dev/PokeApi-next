@@ -2,15 +2,16 @@ import React, {useEffect, useState} from "react";
 import {Layout} from "@/components";
 import {Card, Container, Grid, Text} from "@nextui-org/react";
 import Image from "next/image";
-import {localFavorites} from "@/utils";
+import {useFavorites} from "@/utils";
 import {useRouter} from "next/router";
 
 
 const FavoritesPage = () => {
+    const {getPokemons} = useFavorites();
     const [favoritePokemons, setFavoritePokemons] = useState<number[]>([]);
 
     useEffect(() => {
-        setFavoritePokemons(localFavorites.pokemons())
+        setFavoritePokemons(getPokemons())
     }, []);
     const router = useRouter();
     const onFavoriteClicked = (id: number) => {

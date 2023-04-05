@@ -6,7 +6,7 @@ import confetti from 'canvas-confetti';
 import {Layout} from "@/components";
 import {pokeApi} from "@/api";
 import {Pokemon, PokemonListResponse} from "@/interfaces";
-import {getPokeApi, localFavorites} from "@/utils";
+import {getPokeApi, useFavorites} from "@/utils";
 
 
 interface Props {
@@ -14,9 +14,10 @@ interface Props {
 }
 
 const PokemonByNamePage: NextPage<Props> = ({pokemon}) => {
-    const [isInFavorites, setIsinFavorites] = useState(localFavorites.existInFavorites(pokemon.id))
+    const {existInFavorites, toggleFavorites} = useFavorites();
+    const [isInFavorites, setIsinFavorites] = useState(existInFavorites(pokemon.id))
     const onToggleFavorite = () => {
-        localFavorites.toggleFavorites(pokemon.id)
+        toggleFavorites(pokemon.id)
         setIsinFavorites(!isInFavorites)
         if (isInFavorites) return;
 

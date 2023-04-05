@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "@types/canvas-confetti": "^1.6.0",
-    "confetti": "link:@types/canvas/confetti"
+    "confetti": "link:@types/canvas/confetti",
+    "react-use": "^17.4.0"
   }
 }
